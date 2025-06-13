@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import HERO_IMG from "../assets/Hero_Prep.png";
+import home from "../assets/home.png"
 import { APP_FEATURES } from "../utils/data";
 import { useNavigate } from "react-router-dom";
 import { LuSparkles } from "react-icons/lu";
@@ -91,7 +92,7 @@ const LandingPage = () => {
         <div>
           <section className="flex items-center justify-center -mt-36">
             <img
-              src={HERO_IMG}
+              src={home}
               alt="Hero"
               className=" max-w-[80vw] md:w-[80vw] rounded-xl shadow-xl border border-gray-200"
             />

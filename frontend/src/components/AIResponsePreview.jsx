@@ -8,7 +8,7 @@ import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 const AIResponsePreview = ({ content }) => {
   if (!content) return null;
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl ml-3 mx-auto">
       <div className="text-[14px] prose prose-slate max-w-none">
         <ReactMarkdown
           remarkPlugins={[remarksGfm]}
@@ -82,7 +82,7 @@ const AIResponsePreview = ({ content }) => {
               );
             },
             a: ({ children, href }) => {
-              x;
+              // x;
               return (
                 <a href={href} className="text-blue-600 hover:underline">
                   {children}

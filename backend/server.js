@@ -28,7 +28,7 @@ app.use("/api/questions", questionRoutes);
 
 app.use("/api/ai", aiRoutes);
 
-app.get("/", (res) => {
+app.get("/", (req,res) => {
   res.send("Welcome to PrepMate Ai's Backend API!");
 });
 
